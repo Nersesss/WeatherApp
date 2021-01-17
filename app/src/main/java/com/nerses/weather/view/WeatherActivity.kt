@@ -136,7 +136,7 @@ class WeatherActivity : AppCompatActivity() {
         } else {
             var location = locationViewModel.getLocation()
             if (location == null){
-                location = LocationModel(0.0,0.0)
+                location = LocationModel(51.52574482485191, -0.12222450370518684)
                 locationViewModel.save(location)
             }
             mainViewModel.fetchWeather(

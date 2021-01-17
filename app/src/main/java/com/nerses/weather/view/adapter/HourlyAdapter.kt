@@ -15,7 +15,7 @@ class HourlyAdapter(val list: List<HourlyModel>): RecyclerView.Adapter<HourlyVie
     }
 
     override fun onBindViewHolder(holder: HourlyViewHolder, position: Int) {
-        holder.initData(list.get(position))
+        holder.initData(list[position])
     }
 
     override fun getItemCount() = list.size

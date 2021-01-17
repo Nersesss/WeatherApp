@@ -5,7 +5,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.nerses.weather.MIN_IN_MILLISECOND
 import com.nerses.weather.R
-import com.nerses.weather.model.DailyModel
 import com.nerses.weather.model.HourlyModel
 import com.nerses.weather.utiles.millisToDate
 

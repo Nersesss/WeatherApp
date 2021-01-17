@@ -1,7 +1,6 @@
 package com.nerses.weather.api
 
 import com.nerses.weather.data.response.WeatherResponse
-import com.nerses.weather.model.WeatherModel
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

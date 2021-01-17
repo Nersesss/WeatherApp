@@ -26,7 +26,7 @@ class WeatherMapper {
     }
 
 
-    fun toEntity(list: List<DailyResponse>): List<DailyEntity> {
+    private fun toEntity(list: List<DailyResponse>): List<DailyEntity> {
         val result = ArrayList<DailyEntity>()
         list.map {
             result.add(
@@ -43,7 +43,7 @@ class WeatherMapper {
         return result
     }
 
-    fun toHourlyEntity(list: List<HourlyResponse>): List<HourlyEntity> {
+    private fun toHourlyEntity(list: List<HourlyResponse>): List<HourlyEntity> {
         val result = ArrayList<HourlyEntity>()
         list.map {
             result.add(

@@ -3,8 +3,6 @@ package com.nerses.weather.di
 import android.content.Context
 import com.nerses.weather.utiles.NetworkHelper
 import com.nerses.weather.BuildConfig
-import com.nerses.weather.api.ApiHelper
-import com.nerses.weather.api.ApiHelperImpl
 import com.nerses.weather.api.ApiService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -16,7 +14,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 
 val appModule = module {
     single { provideOkHttpClient() }
-    single { provideRetrofit(get(), BuildConfig.BASE_URL) }
+    single { provideRetrofit(get()) }
     single { provideApiService(get()) }
     single { provideNetworkHelper(androidContext()) }
 }
@@ -36,15 +34,12 @@ val appModule = module {
 
     private fun provideRetrofit(
         okHttpClient: OkHttpClient,
-        BASE_URL: String
     ): Retrofit =
         Retrofit.Builder()
             .addConverterFactory(MoshiConverterFactory.create())
-            .baseUrl(BASE_URL)
+            .baseUrl(BuildConfig.BASE_URL)
             .client(okHttpClient)
             .build()
 
     private fun provideApiService(retrofit: Retrofit): ApiService = retrofit.create(ApiService::class.java)
-
-    private fun provideApiHelper(apiHelper: ApiHelperImpl): ApiHelper = apiHelper
 

@@ -2,7 +2,6 @@ package com.nerses.weather.data.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.nerses.weather.model.HourlyModel
 
 @Entity(tableName = "weather")
 data class WeatherEntity(

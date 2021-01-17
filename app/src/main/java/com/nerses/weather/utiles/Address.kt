@@ -15,7 +15,7 @@ import java.util.*
             e.printStackTrace()
         }
         return if (addresses != null && addresses.isNotEmpty()) {
-            addresses[0].locality
+            addresses[0].locality ?: addresses[0].subAdminArea
         } else {
             null
         }

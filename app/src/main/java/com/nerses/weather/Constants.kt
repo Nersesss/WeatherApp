@@ -3,8 +3,6 @@ package com.nerses.weather
 
 const val MINUTELY = "minutely"
 const val METRIC = "metric"
-const val IMPERIAL = "imperial"
-const val STANDARD = "standard"
 const val MIN_IN_MILLISECOND = 1000
 const val MY_PERMISSIONS_REQUEST_LOCATION = 99
 

@@ -18,7 +18,7 @@ class WeeklyAdapter(val context: Context, var list: List<DailyModel>) :
     }
 
     override fun onBindViewHolder(holder: WeeklyViewHolder, position: Int) {
-        holder.initData(list.get(position))
+        holder.initData(list[position])
     }
 
     override fun getItemCount() = list.size
