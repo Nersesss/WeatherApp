@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="latitudeBabel">Latitude</string>
+    <string name="longitudeBabel">Longitude</string>
+    <string name="database">com.nerses.weather.database</string>
+    <string name="details">Details</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="weekly">Weekly</string>
+    <string name="current">Current</string>
+    <string name="connection_message">Please check your connection and refresh page.</string>
+    <string name="no_connection">No connection</string>
+    <string name="_cancel">Cancel</string>
+    <string name="refresh">Refresh</string>
+    <string name="suggest_msg">Nothing to show, please check your connection and swipe to refresh</string>
+    <string name="network_error">Unknown server error</string>
+    <string name="error">Error</string>
+</resources>
