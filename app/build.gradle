@@ -39,7 +39,7 @@ android {
             buildConfigField 'String', "BASE_URL", "\"https://api.openweathermap.org/\""
             buildConfigField 'String', "API_KEY", "\"cb23abec22f8fa5367dc0cfffef622da\""
 
-            buildConfigField "String", "APP_VERSION", "0.0.1"
+            buildConfigField "String", "APP_VERSION", "\"0.0.1\""
 
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
